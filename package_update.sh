@@ -1,4 +1,6 @@
 # package update #
+# sudo vi /var/lib/dpkg/status
+# sudo vi /var/lib/dpkg/available
 
 sudo apt install python3-pip -y
 
@@ -21,3 +23,13 @@ sudo pip3 install pipdate
 sudo python3 -m pip install pip --upgrade
 
 sudo -H pipdate
+
+sudo ubuntu-drivers autoinstall
+
+sudo apt install nvidia-cuda-toolkit -y
+
+#sudo apt install nvidia-utils-510 -y
+
+sudo pip3 install torch torchvision torchaudio
+
+sudo apt autoremove -y
