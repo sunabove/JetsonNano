@@ -35,6 +35,8 @@ sudo ubuntu-drivers autoinstall
 
 #sudo pip3 install torch torchvision torchaudio
 
+sudo apt install nvidia-cuda-toolkit
+
 sudo apt autoremove -y
 
 """
