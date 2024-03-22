@@ -41,7 +41,7 @@ sudo apt autoremove -y
 
 import os 
 
-cmds = cmds.strip()
+cmds = cmds.strip().splitlines()
 
 for idx, cmd in enumerate( cmds ) :
     cmd = cmd.strip()
@@ -52,9 +52,13 @@ for idx, cmd in enumerate( cmds ) :
         continue
     pass
 
+    if idx : print()
+
     print( cmd, flush=1 )
 
-    result = os.open( cmd ).read()
+    #result = os.popen( cmd ).read()
 
-    print( result, flush = 1 )
+    #print( result, flush = 1 )
+
+    os.system( cmd )
 pass
