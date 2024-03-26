@@ -25,6 +25,8 @@ sudo apt install libsystemd-dev -y
 
 sudo apt install python3-pyqt5 -y
 
+sudo apt install libopenblas-dev -y
+
 sudo python3 -m pip install pip --upgrade
 
 sudo pip3 install dbus-python
@@ -37,15 +39,20 @@ sudo pip3 install jetson-stats
 
 sudo -H pipdate
 
-#sudo ubuntu-drivers autoinstall
+# pytorch
 
-#sudo apt install nvidia-cuda-toolkit -y
+wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-1.8.0-cp36-cp36m-linux_aarch64.whl -O torch-1.9.0-cp36-cp36m-linux_aarch64.whl
+sudo apt install python3-pip libopenblas-base libopenmpi-dev 
+sudo -H pip3 install Cython
+sudo -H pip3 install numpy torch-1.9.0-cp36-cp36m-linux_aarch64.whl
 
-#sudo apt install nvidia-utils-510 -y
+# sudo ubuntu-drivers autoinstall
 
-#sudo pip3 install torch torchvision torchaudio
+# sudo apt install nvidia-cuda-toolkit -y
 
-#sudo apt install nvidia-cuda-toolkit
+# sudo apt install cuda-toolkit -y
+
+# sudo pip3 install torch torchvision torchaudio
 
 sudo apt autoremove -y
 
