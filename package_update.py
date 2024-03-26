@@ -5,6 +5,8 @@ cmds = """
 # sudo vi /var/lib/dpkg/status
 # sudo vi /var/lib/dpkg/available
 
+sudo apt install --only-upgrade tensorrt
+
 sudo apt install python3-pip -y
 
 sudo apt install python-is-python3  -y
@@ -27,7 +29,7 @@ sudo python3 -m pip install pip --upgrade
 
 sudo -H pipdate
 
-sudo ubuntu-drivers autoinstall
+#sudo ubuntu-drivers autoinstall
 
 #sudo apt install nvidia-cuda-toolkit -y
 
@@ -35,7 +37,7 @@ sudo ubuntu-drivers autoinstall
 
 #sudo pip3 install torch torchvision torchaudio
 
-sudo apt install nvidia-cuda-toolkit
+#sudo apt install nvidia-cuda-toolkit
 
 sudo apt autoremove -y
 
