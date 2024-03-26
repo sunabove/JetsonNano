@@ -23,13 +23,17 @@ sudo apt install libcairo2-dev -y
 
 sudo apt install libsystemd-dev -y
 
+sudo apt install python3-pyqt5 -y
+
+sudo python3 -m pip install pip --upgrade
+
 sudo pip3 install dbus-python
 
 sudo pip3 install packaging
 
 sudo pip3 install pipdate
 
-sudo python3 -m pip install pip --upgrade
+sudo pip3 install jetson-stats
 
 sudo -H pipdate
 
