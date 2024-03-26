@@ -23,7 +23,8 @@ sudo apt install libcairo2-dev -y
 
 sudo apt install libsystemd-dev -y
 
-sudo apt install python3-pyqt5 -y
+# sudo apt install python3-pyqt5 -y
+# sudo apt purge python3-pyqt5
 
 sudo apt install libopenblas-dev -y
 
@@ -42,9 +43,9 @@ sudo -H pipdate
 # pytorch
 
 wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-1.8.0-cp36-cp36m-linux_aarch64.whl -O torch-1.9.0-cp36-cp36m-linux_aarch64.whl
-sudo apt install python3-pip libopenblas-base libopenmpi-dev 
+sudo apt install libopenblas-base libopenmpi-dev -y
 sudo -H pip3 install Cython
-sudo -H pip3 install numpy torch-1.9.0-cp36-cp36m-linux_aarch64.whl
+sudo -H pip3 install torch-1.9.0-cp36-cp36m-linux_aarch64.whl
 
 # sudo ubuntu-drivers autoinstall
 
