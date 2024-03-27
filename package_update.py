@@ -5,9 +5,9 @@ cmds = """
 # sudo vi /var/lib/dpkg/status
 # sudo vi /var/lib/dpkg/available
 
-sudo apt purge libreoffice*
+sudo apt purge libreoffice* -y
 
-sudo apt purge firefox*
+sudo apt purge firefox* -y
 
 sudo apt update
 
