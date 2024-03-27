@@ -15,6 +15,8 @@ sudo apt upgrade -y
 
 sudo apt install --only-upgrade tensorrt
 
+sudo apt install python3-setuptools -y
+
 sudo apt autoremove -y
 
 sudo apt install python3-pip -y
@@ -32,6 +34,8 @@ sudo apt install librsync-dev -y
 sudo apt install libcairo2-dev -y
 
 sudo apt install libsystemd-dev -y
+
+sudo apt install libcups2-dev -y
 
 # sudo apt install python3-pyqt5 -y
 # sudo apt purge python3-pyqt5
