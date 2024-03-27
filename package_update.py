@@ -5,7 +5,17 @@ cmds = """
 # sudo vi /var/lib/dpkg/status
 # sudo vi /var/lib/dpkg/available
 
+sudo apt purge libreoffice*
+
+sudo apt purge firefox*
+
+sudo apt update
+
+sudo apt upgrade -y
+
 sudo apt install --only-upgrade tensorrt
+
+sudo apt autoremove -y
 
 sudo apt install python3-pip -y
 
