@@ -21,7 +21,7 @@ sudo apt autoremove -y
 
 sudo apt install python3-pip -y
 
-sudo apt install software-properties-common
+sudo apt install software-properties-common -y
 
 sudo apt install python-is-python3 -y
 
