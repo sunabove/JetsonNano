@@ -52,6 +52,12 @@ sudo pip3 install pipdate
 
 sudo pip3 install jetson-stats
 
+sudo apt install qtbase5-dev -y
+
+sudo apt install smbclient libmaus2-2 libmaus2-dev -y
+
+sudo apt install libglib2.0-dev libsmbclient-dev libcups2-dev -y
+
 sudo -H pipdate
 
 # pytorch
