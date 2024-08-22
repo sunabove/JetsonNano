@@ -108,15 +108,13 @@ for idx, cmd in enumerate( cmds ) :
         else :
             print( cmd, flush=1 )
         pass
+
+        continue
+    else :
+        if idx : print()
+
+        print( cmd, flush=1 )
+
+        os.system( cmd )
     pass
-
-    if idx : print()
-
-    print( cmd, flush=1 )
-
-    #result = os.popen( cmd ).read()
-
-    #print( result, flush = 1 )
-
-    os.system( cmd )
 pass
