@@ -1,14 +1,6 @@
 #!/usr/bin/python3
 
 cmds = """
-# package update #
-# sudo vi /var/lib/dpkg/status
-# sudo vi /var/lib/dpkg/available
-
-#sudo apt purge libreoffice* -y
-
-#sudo apt purge firefox* -y
-
 # vmware 데스크톱 툴 설치
 sudo apt install open-vm-tools-desktop
 
