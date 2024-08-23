@@ -106,12 +106,14 @@ for idx, cmd in enumerate( cmds ) :
         if "sudo" in cmd :
             pass
         else :
-            print( "\n", cmd, flush=1 )
+            print()
+            print( cmd, flush=1 )
         pass
 
         continue
     else :
-        print( "\n", cmd, flush=1 )
+        print()
+        print( cmd, flush=1 )
 
         os.system( cmd )
     pass
